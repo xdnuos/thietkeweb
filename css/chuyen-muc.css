@@ -1,0 +1,209 @@
+.container {
+    margin-top: 0;
+}
+
+#dia-diem {
+    margin-bottom: 3vw;
+}
+
+.bai-viet {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    gap: 10px;
+}
+
+.bai-viet img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.left-img {
+    grid-row: 1/3;
+    position: relative;
+}
+
+.bai-viet .caption {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    text-align: left;
+    margin: 1% 2.5%;
+}
+
+.bai-viet .caption a {
+    color: #fff;
+}
+
+.bai-viet .caption p {
+    margin: 0.5em 0;
+}
+
+.right-img1 {
+    grid-row: 1/2;
+    position: relative;
+}
+
+.right-img2 {
+    grid-row: 2/3;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+}
+
+.title {
+    margin: 0;
+}
+
+
+/* slider */
+
+.slider li {
+    list-style: none;
+}
+
+.slider ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    gap: 20px;
+}
+
+.item {
+    position: relative;
+}
+
+.item img {
+    width: 20vw;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.slider .caption {
+    text-align: left;
+}
+
+.slider .caption a {
+    text-align: left;
+    color: black;
+    font-size: 0.8em;
+}
+
+.slider .caption p {
+    margin: 0.5em auto;
+}
+
+
+/* end slider*/
+
+
+/* bai viet 2 */
+
+#bai-viet-2 {
+    background-color: #f1f1f1;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+#bai-viet-2 .container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 85%;
+}
+
+#bai-viet-2-container {
+    grid-column: 1/2;
+}
+
+#bai-viet-2 li {
+    list-style: none;
+}
+
+#bai-viet-2 .info {
+    margin: 0.5em 0;
+}
+
+.rightin4 h2 {
+    text-align: left;
+}
+
+.topnews ul {
+    padding: 0;
+}
+
+.titlenews1,
+.titlenews {
+    background-color: #353535;
+    font-size: 18px;
+    padding: 7px 10px;
+    padding-left: 50px;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.titlenews1 a,
+.titlenews a {
+    color: #fff;
+}
+
+.imgnews {
+    position: relative;
+}
+
+.item-news {
+    position: relative;
+}
+
+.stt {
+    background-image: linear-gradient(#0965DE, #53C3F2);
+    color: white;
+    width: 40px;
+    height: 42px;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px 0;
+    position: absolute;
+    border-radius: 0 0 8px 8px;
+    left: 0;
+    top: 0;
+}
+
+
+/* bai viet khac */
+
+.bai-viet-khac li {
+    list-style: none;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 170px;
+    margin: 20px;
+    align-items: center;
+    position: relative;
+}
+
+.item-bai-viet-khac img {
+    width: 275px;
+    height: 150px;
+    object-fit: cover;
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    border-radius: 7px;
+}
+
+.content {
+    position: absolute;
+    left: 300px;
+    text-align: left;
+    top: 10px;
+}
+
+.content a {
+    color: black;
+}

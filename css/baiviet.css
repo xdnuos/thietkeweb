@@ -1,0 +1,249 @@
+/*Body bai viet*/
+
+.infor,
+.infor2 {
+    max-width: 90%;
+    display: block;
+    margin: 0 65px;
+    margin-top: 2vh;
+    padding: 0 20px;
+}
+
+.leftin4,
+.more {
+    width: 70%;
+    float: left;
+    display: block;
+    margin-right: 20px;
+    margin-top: 30px;
+    overflow: hidden;
+    background-color: #F5F5F5;
+}
+
+.more {
+    background-color: #ffffff;
+}
+
+.rightin4 {
+    max-width: 27.5%;
+    float: right;
+    display: block;
+}
+
+@media only screen and (max-width: 987px) {
+    .leftin4,
+    .rightin4 {
+        float: none;
+        width: 100%;
+    }
+}
+
+#contenimg {
+    text-align: center;
+    background-color: #e6e6e6;
+    color: rgb(39, 39, 39);
+}
+
+.content p {
+    padding: 0 35px;
+}
+
+.content h3,
+.content h2 {
+    padding: 0 35px;
+}
+
+.anh {
+    width: 100%;
+    background-color: #e6e6e6;
+}
+
+.anh img {
+    width: 100%;
+    height: auto;
+}
+
+.imgnews {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+.tile {
+    border-bottom: 1px solid lightslategrey;
+    padding: 8px;
+    text-align: center;
+}
+
+figure {
+    background-color: yellow;
+}
+
+.suggest {
+    border-bottom: 1px solid lightslategrey;
+}
+
+.suggest a {
+    color: #111111;
+}
+
+.suggest a:hover {
+    color: #0965DE;
+}
+
+.suggest li {
+    padding: 4px;
+    margin-left: 25px;
+    word-spacing: 1.5px;
+}
+
+.content {
+    padding: 8px;
+    margin: auto;
+}
+
+.doimau {
+    color: #0965DE;
+}
+
+.topnews li,
+.menulast li {
+    list-style: none;
+}
+
+.topnews ul,
+.menulast ul {
+    padding: 0;
+}
+
+.stt {
+    background-image: linear-gradient(#0965DE, #53C3F2);
+    color: white;
+    width: 40px;
+    height: 42px;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px 0;
+    float: left;
+    position: absolute;
+    border-radius: 0 0 8px 8px;
+}
+
+.titlenews,
+.titlenews1 {
+    background-color: #353535;
+    font-size: 18px;
+    padding: 7px 10px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.titlenews1 a {
+    color: #F5F5F5;
+}
+
+.titlenews1 a:active {
+    color: #A9DEF4;
+}
+
+.titlenews a {
+    color: #F5F5F5;
+}
+
+.titlenews a:active {
+    color: #A9DEF4;
+}
+
+.imgmore {
+    background-color: #F5F5F5;
+    display: block;
+    width: auto;
+    height: 130px;
+    padding-bottom: 40px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.imgmore a {
+    color: #242424;
+}
+
+.imgmore a:active {
+    color: #1E90FF;
+}
+
+.author {
+    position: relative;
+    top: 5px;
+    left: 15px;
+}
+
+.cap h3 {
+    position: relative;
+    top: 19px;
+    left: 15px;
+}
+
+.boxtag button {
+    display: inline;
+    background-color: #F5F5F5;
+    border: none;
+    line-height: 25px;
+    z-index: 5px;
+    position: absolute;
+    top: 5px;
+    font-size: 18px;
+}
+
+.boxtag {
+    position: relative;
+}
+
+.bright {
+    right: 0;
+}
+
+.listtag {
+    position: static;
+    top: 5px;
+    width: 200%;
+    padding-right: 300px;
+}
+
+.listtagparent {
+    top: 7px;
+    margin-left: 110px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+}
+
+.tagname {
+    margin: 0;
+    padding-right: 30px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.tagname a {
+    color: #585858;
+}
+
+.tagname a:hover {
+    color: #0965DE;
+}
+
+.tagis {
+    float: left;
+    padding: 10px;
+    background-image: linear-gradient(to top right, #0965DE, #53C3F2);
+    color: #F5F5F5;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+
+/*ket thuc Body bai viet*/

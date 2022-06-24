@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.highlight {
+    color: #1e90ff;
+}
+
+.cl-org {
+    color: #53C3F2 !important;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 3em;
+}
+
+body {
+    font-size: 16px;
+    margin: 0 auto;
+    min-width: 1000px;
+    font-weight: normal;
+    font-family: "Product-Sans", sans-serif;
+}
+
+
+/* header */
+
+header {
+    padding-top: 1.5em;
+    width: 90%;
+    /* height: 9vw; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 10%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+#menu ul {
+    padding: 1em;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-content: center;
+}
+
+#menu li {
+    margin-left: 1em;
+}
+
+#menu a {
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 25px;
+    padding: 0.6em;
+    color: black;
+}
+
+#menu a:hover,
+#menu .active {
+    color: white;
+    background-color: #094b65;
+}
+
+
+/* end header */
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 17em;
+    background-color: #333;
+    clear: both;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    color: darkgray;
+    padding-top: 2em;
+    padding-right: 2em;
+}
+
+.footer-container i {
+    margin-right: 10px;
+}
+
+.footer-container h3 {
+    color: white;
+}
+
+.footer-container .list-social {
+    display: flex;
+    margin-top: 30px;
+}
+
+.footer-container ul {
+    padding-left: 0;
+}
+
+.footer-container li {
+    list-style: none;
+    padding-right: 2em;
+}
+
+.footer-container a {
+    color: darkgrey;
+}
+
+.email {
+    margin-top: 1em;
+}
+
+#email {
+    width: 20em;
+    border-radius: 10px;
+    height: 4em;
+    border: none;
+    padding-left: 1em;
+}
+
+#email::placeholder {
+    font-size: 1.3em;
+}
+
+#dang-ki {
+    width: 8em;
+    height: 4em;
+    border: none;
+    border-radius: 10px;
+    margin-left: 15px;
+    background-color: #1e90ff;
+}
+
+#text-dangki {
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+
+/* end footer */
+
+.search {
+    margin-top: 12px;
+    grid-column: 10/13;
+    white-space: nowrap;
+    position: relative;
+}
+
+.search input#search {
+    width: 400px;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 10pt;
+    float: right;
+    color: black;
+    transition: width .55s ease;
+    padding: 15px;
+    background-color: transparent;
+}
+
+.search-icon {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    z-index: 1;
+    color: black;
+    background-color: transparent;
+    border: none;
+}
+
+.search ::placeholder {
+    color: black;
+}
+
+.search-icon:hover {
+    color: #1e90ff;
+}
+
+
+/* ANIMATION EFFECTS */
+
+
+/* .search input#search:focus,
+.search input#search:active {
+    outline: none;
+}
+
+.search:hover input#search {
+    outline: none;
+    width: 300px;
+}
+
+.search:hover .search-icon {
+    color: #4f5b66;
+} */
+
+#scroll-down {
+    position: fixed;
+    bottom: 1em;
+    z-index: 10;
+    height: 80px;
+    width: 100px;
+}
+
+#scroll-down #button {
+    position: absolute;
+    left: 50%;
+    width: 35px;
+    height: 35px;
+    margin-left: -12px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: rotate(-45deg);
+    animation: scroll-down 1.5s infinite;
+    box-sizing: border-box;
+}
+
+@keyframes scroll-down {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+
+/* làm mờ dưới ảnh */
+
+.gradient-img::before,
+#gradient-img::before {
+    content: "";
+    background: linear-gradient(180deg, rgba(88, 88, 88, 0), rgb(34, 34, 34));
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 40%;
+    border-radius: 10px;
+}
+
+
+/* code cua trang */
+
+#scrolltop {
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    border: none;
+    font-size: 30px;
+    padding: 17px 25px;
+    background-color: #585858;
+    color: #F5F5F5;
+    z-index: 4px;
+    display: none;
+    border-radius: 5px;
+    opacity: 70%;
+}
+
+.infor,
+.infor2 {
+    max-width: 90%;
+    display: block;
+    margin: 0 65px;
+    margin-top: 2vh;
+    padding: 0 20px;
+}

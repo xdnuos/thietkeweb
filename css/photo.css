@@ -1,0 +1,153 @@
+body {
+    font-family: Product-Sans;
+    color: #555;
+}
+
+:root {
+    --primary-color: #0978e4;
+    /* color: #1e90ff;
+  color: #53c3f2;
+  color: #0965de;
+  color: #242424;
+  color: #a9def4; */
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.title>.to {
+    color: var(--primary-color);
+}
+
+.title>.name {
+    color: var(--primary-color);
+}
+
+.photo-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.photos-list {
+    display: list-item;
+    list-style: none;
+    column-count: 4;
+    column-gap: 10px;
+    column-fill: balance;
+    padding-bottom: 40px;
+}
+
+.photos-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.photos-item:hover>img {
+    transform: scale(1.1);
+    filter: blur(3px);
+}
+
+.photos-item>img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0.4s ease;
+    object-fit: cover;
+}
+
+.photos-item:hover>.overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.overlay>i {
+    color: white;
+    font-size: 2rem;
+}
+
+.zoom-image {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    transform: scale(0);
+    z-index: 999;
+}
+
+.zoom-image.show {
+    transform: scale(1);
+}
+
+.zoom-image>img {
+    height: 70%;
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: cover;
+    transition: all 0.4s ease;
+    border-radius: 4px;
+}
+
+.zoom-image>img:hover {
+    transform: scale(1.1);
+    filter: brightness(110%);
+}
+
+.close-btn {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    cursor: pointer;
+}
+
+.close-btn>i {
+    font-size: 3rem;
+    transition: all 0.3s ease;
+}
+
+.close-btn:hover>i {
+    color: rgb(189, 85, 85);
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1024px) {
+    .photos-list {
+        column-count: 3;
+        column-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .photos-list {
+        column-count: 2;
+        column-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .photos-list {
+        column-count: 1;
+        column-gap: 10px;
+    }
+}
